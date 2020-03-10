@@ -1,0 +1,159 @@
+*{
+    font-size: 16px;
+    font-family: Lato;
+}
+html{
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.logo{
+    flex-grow: 3;
+    text-align: center;
+    margin: 4.5% 0;
+}
+.logo h3{
+    color: #4b647e;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 28px;
+    display: inline;
+}
+.logo span{
+    color: #3d37f1;
+    font-weight: 700;
+    font-size: 32px;
+}
+.nav-background{
+    background-image: url("./images/background header.png");
+    background-repeat: no-repeat;
+    flex-grow: 5;
+}
+.header-nav ul{
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.header-nav ul li{
+    
+    float: right;
+    list-style: none;
+    padding: 10px 20px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.login{
+    text-align: center;
+    width: 214px;
+    height: 72px;
+    border-radius: 36px;
+    background-color: #ff8923;
+    box-shadow: 0px 5px 50px -5px #ff8923;
+    border: none;
+    color: #ffffff;
+}
+.login span{
+    position: relative;
+    top: 25px;
+}
+
+#galery{
+    display: flex;
+}
+#galery div{
+    flex: 1;
+}
+img{
+    width: 100%;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 100px 0;
+    background-color: #000000;
+    color: #ffffff;
+}
+.fpart-1{
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+}
+.social-networks{
+    display: flex;
+}
+.fpart-2{
+    display: flex;
+    flex-direction: column;
+}
+.fpart-3{
+    display: flex;
+    flex-direction: column;
+}
+.fpart-4{
+    display: flex;
+    flex-direction: column;
+}
+.text-and-icon{
+    display: flex;
+}
+i{
+    margin: 15px;
+}
+.fpart-1 h2 span{
+    color: #3d37f1;
+    font-weight: bold;
+    font-size: 32px;
+}
+.fpart-1 h2{
+    font-size: 32px;
+}
+footer div:nth-child(n+1) h2{
+    font-family: Roboto;
+    font-size: 24px;
+}
+.fpart-1 p:nth-child(4){
+    margin-top: 100px;
+}
+#menu label{
+    display: none;
+}
+#menu input{
+    display: none;
+}
+@media screen and (max-width:720px){
+    .nav-background{
+        background-image: none;
+        background-color: #ffffff;
+        flex-basis: 100%;
+        display: none;
+    }
+    #menu label{
+        display: block;
+    }
+    .nav-background nav ul{
+        flex-direction: column;
+        padding-left: 0%;
+    }
+    .nav-background nav ul li a {
+        color: #4333ee;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
