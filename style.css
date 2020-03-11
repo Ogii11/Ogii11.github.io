@@ -48,7 +48,13 @@ header{
     align-items: baseline;
     transition: 1s;
 }
+@keyframes logo-animation {
+    50%{
+        transform: skew(40deg, 10deg);
+    }
+}
 .logo{
+    animation: logo-animation 1s ;
     flex-grow: 3;
     text-align: center;
 }
@@ -88,6 +94,11 @@ header{
 .header-nav ul li a{
     transition: 1s;
 }
+.header-nav ul li:not(:last-child):hover {
+    background-color: #958ee9;
+    transition: 1s;
+    border-radius: 25px;
+}
 .login{
     margin-left: -25px;
     text-align: center;
@@ -117,6 +128,23 @@ header{
 .wave-btn-position{
     text-align: center;
     margin-top: 50px;
+}
+@keyframes bounce{
+    0%{
+      scale: 1;  
+    }
+    20%{
+        scale: 0.8;
+    }
+    70%{
+        scale: 1.2;
+    }
+    100%{
+        scale: 1;
+    }
+}
+.wave-btn:hover{
+    animation: bounce 0.7s ease-out;
 }
 #home_1{
     display: flex;
@@ -328,6 +356,26 @@ header{
     align-items: center;
     justify-content: center;
 }
+@keyframes rotate{
+    100%{
+        transform: rotate(90deg);
+    }
+}
+@keyframes rotate2{
+    100%{
+        transform: rotate(180deg);
+    }
+}
+@keyframes rotate3{
+    100%{
+        transform: rotate(270deg);
+    }
+}
+@keyframes rotate4{
+    100%{
+        transform: rotate(360deg);
+    }
+}
 .portfolio-2-box1 button{
     background-image: linear-gradient(135deg, #ad92fc,#6752f3);
 }
@@ -336,6 +384,18 @@ header{
 }
 .portfolio-2-box3 button{
     background-image: linear-gradient(135deg, #fbc6a0,#ff8b4e);
+}
+.btn-rotate{
+    animation: rotate 1s ease-in-out 0s;
+}
+.btn-rotate-2{
+    animation: rotate2 1s ease-in-out 0s;
+}
+.btn-rotate-3{
+    animation: rotate3 1s ease-in-out 0s;
+}
+.btn-rotate-4{
+    animation: rotate4 1s ease-in-out 0s;
 }
 .portfolio-2-box button{
     border: none;

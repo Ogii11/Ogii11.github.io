@@ -120,3 +120,30 @@ function headerColor(){
 }
 portfolioPhotos(document.getElementsByClassName("selected-portfolio-btn")[0]);
 headerColor();
+function btnRotateF(e){
+    if(e.style.transform == "rotate(90deg)"){
+        e.classList.add("btn-rotate-2");
+        setTimeout(function(){
+            e.style.transform = "rotate(180deg)";
+            e.classList.remove("btn-rotate-2");
+        },1000);
+    } else if(e.style.transform == "rotate(180deg)"){
+        e.classList.add("btn-rotate-3");
+        setTimeout(function(){
+            e.style.transform = "rotate(270deg)";
+            e.classList.remove("btn-rotate-3");
+        },1000);
+    } else if(e.style.transform == "rotate(270deg)"){
+        e.classList.add("btn-rotate-4");
+        setTimeout(function(){
+            e.style.transform = "rotate(0deg)";
+            e.classList.remove("btn-rotate-4");
+        },1000);
+    } else {
+        e.classList.add("btn-rotate");
+        setTimeout(function(){
+            e.style.transform = "rotate(90deg)";
+            e.classList.remove("btn-rotate");
+        },1000);
+    }
+}
