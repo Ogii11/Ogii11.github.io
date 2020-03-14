@@ -1,0 +1,104 @@
+*{
+    /*font-size: 16px;*/
+    font-family: lato;
+}
+html{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+input{
+    border: none;
+    background-color: rgb(219, 219, 219);
+    width: 360px;
+    height: 30px;
+    margin: 10px 5px;
+    padding: 10px;
+    min-width: 0px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.background{
+    background-image: url(./images/login-back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(8px);
+    height: 100vh;
+}
+#main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.login-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+.data-entry{
+    display: flex;
+}
+input[type="submit"]{
+    width: 380px;
+    height: 50px;
+    /*background-color: rgb(124, 236, 124);*/
+    background-color: #4333ee;
+    color: white;
+}
+input[type="submit"]:hover{
+    /*background-color: rgb(17, 218, 17);*/
+    background-color: #8c83e9;
+}
+.login{
+    margin: 20px;
+}
+.sign-up{
+    margin: 20px;
+}
+.fb{
+    color: rgb(20, 84, 109);
+}
+.tw{
+    color: rgb(47, 158, 209);
+}
+.gp{
+    color: red;
+}
+.yt{
+    color: red;
+}
+i{
+    margin: 10px;
+}
+@media screen and (max-width:900px){
+    .data-entry{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:500px){
+    input{
+        width: 250px;
+    }
+    input[type="submit"]{
+        width: 270px;
+    }
+    .background{
+        height: 150vh;
+    }
+    #main{
+        top: 80%;
+    }
+}
