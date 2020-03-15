@@ -11,6 +11,9 @@ body{
     margin: 0px;
     padding:0px;
 }
+button{
+    outline: 0px;   
+}
 a{
     color: #ffffff;
     text-decoration: none;
@@ -676,6 +679,7 @@ footer{
     justify-content: space-evenly;
     background-color: #000000;
     color: #ffffff;
+    padding: 50px 0 50px;
 }
 .fpart-1{
     display: flex;
