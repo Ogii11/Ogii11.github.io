@@ -14,7 +14,7 @@ function login(){
       .then(e => e.json())
       .then(data => {
           console.log(data)
-          if(data.email) window.location.href = "file:///C:/Users/User/Desktop/New%20folder/RealBauApp-Frontend/html/proba.html";
+          if(data.email) window.location.href = window.location + "/proba.html";
       })
       .catch(err => console.log(err))
   }
